@@ -1,17 +1,21 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 50px;
 }
 
-html, body {
+ body {
+    border-style:inherit;
+    border-radius: 30px;
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: rgb(237, 230, 230);
+    box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.194);
 }
 
-header {
-    background-color: black;
+header{
+    border-radius: 30px;
+    background-color: rgb(21, 20, 20);
     color: white;
     text-align: center;
 }
@@ -29,4 +33,38 @@ header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
+} 
+
+ header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+ 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    
+    background-color: rgba(0, 0, 0, 0.427);
+    color: white;
+}
+
+section.imagem > p {
+
+    background-color: rgba(0, 0, 0, 0.437);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
 }
