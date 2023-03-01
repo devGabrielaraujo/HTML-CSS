@@ -10,10 +10,11 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 10px;
         }
-
+      
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,th {
@@ -22,18 +23,44 @@
         }
 
         thead,tfoot {
-            background-color:rgb(100, 99, 99);
+            background-color:rgb(48, 47, 47);
+            color: rgb(255, 255, 255);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:rgb(48, 47, 47);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(156, 152, 152);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        caption {
             color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            
         }
     </style>
 </head>
 <body>
     <H1>Uso de Tabelas Grandes <H1>
         <table>
+            <caption>
+                População das Unidades Federativas
+            </caption>
             <thead>
                      <tr>
-                        <th>Estado</th>
-                        <th>População</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col"style="width: 50px;">População</th>
                     </tr>
             </thead>
             <tbody>
@@ -117,10 +144,12 @@
                     </td>
                 </tr>
                 <tr>
-                    Espirito Santo
-                </tr>
-                <tr class="num">
-                    4 108 508
+                    <td>
+                        Espirito Santo
+                    </td>
+                    <td class="num">
+                        4 108 508
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -236,9 +265,15 @@
             <tfoot>
                 <tr>
                     <th>Total de Habitantes</th>
-                    <td>0000</td>
+                    <strong>
+                        <td class="num">210.147.125</td>
+                    </strong>
                 </tr>
             </tfoot>
         </table>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus maxime adipisci dolor necessitatibus tempore, asperiores dolores eveniet nobis, fuga in quidem aperiam nihil numquam. Aut, quas. Dicta, nesciunt obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quis cumque, placeat vitae nobis fugit ad quisquam distinctio! Iusto in fugit facere obcaecati amet ad tempore harum magni quidem quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit libero deleniti nostrum necessitatibus alias numquam hic? Alias suscipit cum voluptatum, et temporibus enim itaque eos, quae quos totam doloremque.     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus maxime adipisci dolor necessitatibus tempore, asperiores dolores eveniet nobis, fuga in quidem aperiam nihil numquam. Aut, quas. Dicta, nesciunt obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quis cumque, placeat vitae nobis fugit ad quisquam distinctio! Iusto in fugit facere obcaecati amet ad tempore harum magni quidem quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit libero deleniti nostrum necessitatibus alias numquam hic? Alias suscipit cum voluptatum, et temporibus enim itaque eos, quae quos totam doloremque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus maxime adipisci dolor necessitatibus tempore, asperiores dolores eveniet nobis, fuga in quidem aperiam nihil numquam. Aut, quas. Dicta, nesciunt obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quis cumque, placeat vitae nobis fugit ad quisquam distinctio! Iusto in fugit facere obcaecati amet ad tempore harum magni quidem quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit libero deleniti nostrum necessitatibus alias numquam hic? Alias suscipit cum voluptatum, et temporibus enim itaque eos, quae quos totam doloremque.
+        </p>
 </body>
 </html>
