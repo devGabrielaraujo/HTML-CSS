@@ -5,28 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas-03</title>
+    <style>
+        tbody {
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        table {
+          border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: gray;
+        }
+        
+        div. {
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
 <table>
      <thead>
-        <tr>
-        <th>Area</th>
-        <th>Disciplina</th>
+        <section class="normal">
+            <tr>
+            <th rowspan="">Area</th>
+            <th rowspan="3">Disciplina</th>
+        </section>
         <th>Notas</th>
         <th>Média</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th>Exatas</th>
+            <th rowspan="4">Exatas</th>
             <td>Matematica</td>
-            <td>Fisica</td>
-            <td>Quimica</td>
-            <td>Biologia</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
         </tr>
+            <tr>
+            <td>Fisica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>Quimica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <th colspan="5">Média de Exatas</th>
+        <td div="numero">0.0</td>
     </tbody>
-
-
+    <tr>
+        <th rowspan="2">Humanas</th>
+        <td>História</td>
+        <td>00</td>
+        <td>00</td>
+        <td>00</td>
+    </tr>
+    <tr>
+        <td>Geografia</td>
+        <td>00</td>
+        <td>00</td>
+        <td>00</td>
+    </tr>
+    <tr>
+        <th colspan="5">Media de Humanas</th>
+        <td div="Numero">0.0</td>
+    </tr>
 </table>
 </body>
 </html>
