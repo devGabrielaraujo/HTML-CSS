@@ -16,29 +16,29 @@
         th, td {
             border: 1px solid black;
             padding: 10px;
+            width: 40px;
+            text-align: center;
+           
         }
 
         th {
+            background-color: grey;
+            text-shadow:solid rgb(0, 0, 0);
+        }
+        tr.destaque {
             background-color: gray;
         }
-        
-        .normal{
-            background-color: gray;
-        }
-        .normol {
-            background-color: gray;
-        }
+
     </style>
 </head>
 <body>
 <table>
-     <thead>
-        <section class="normal">
+     <thead rowspan="3">
             <tr>
-            <th rowspan="">Area</th>
-            <th rowspan="3">Disciplina</th>
-        </section>
-        <th>Notas</th>
+            <th>Area</th>
+            <th>Disciplina
+            </th>
+        <th colspan="2" scope="colgroup">Notas</th>
         <th>Média</th>
         </tr>
     </thead>
@@ -68,8 +68,8 @@
             <td>00</td>
             <td>00</td>
         </tr>
-        <th colspan="5">Média de Exatas</th>
-        <td div="numero">0.0</td>
+        <th colspan="4">Média de Exatas</th>
+        <td>0.0</td>
     </tbody>
     <tr>
         <th rowspan="2">Humanas</th>
@@ -84,11 +84,9 @@
         <td>00</td>
         <td>00</td>
     </tr>
-    <tr>
-        <section class="normol">
-            <th colspan="5">Media de Humanas</th>
-            <td div="Numero">0.0</td>
-        </section>
+    <tr class="destaque">
+        <th colspan="4">Media de Humanas</th>
+        <td>0.0</td>
     </tr>
 </table>
 </body>
